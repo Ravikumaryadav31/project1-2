@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+        body{
+            background-color:#686b82;
+        }
+
+        .nav {
+            background-color:#6d7e8f;
+            width: 100%;
+            /* min-height:5rem; */
+            overflow: auto;
+        }
+
+        .nav2 {
+            float: left;
+             margin-left: 10em;
+
+
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .nav2 li {
+            display: inline-block;
+
+
+        }
+
+        a {
+            display: flex;
+            padding: 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .nav2 a:hover {
+            background-color: rgb(161, 121, 12);
+
+        }
+
+        .nav2>.product a:hover {
+
+
+            color: whitesmoke;
+            font-family: 20px;
+            display: none;
+
+
+        }
+
+        .container {
+            display: grid;
+            margin-top: 60px;
+            width: 100%;
+            height: 100rem;
+            grid-template-columns: repeat(2, 45%);
+            grid-template-rows: repeat(2, 45%);
+            justify-content: center;
+            grid-gap: 30px;
+        }
+
+        .container>div {
+            background-color: #545a69;
+            border: solid 10px rgb(250, 245, 245);
+        }
+        /* span{
+            display: inline-block;
+        } */
+        p {
+            font-size: x-large;
+        }
+
+        #image {
+            width: 100%;
+            height: 60%;
+            position: relative;
+            top: 30%;
+
+        }
+
+        #image1 {
+
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 90px;
+            left: 30px;
+            top: 10px;
+            border-radius: 50px;
+
+
+
+
+        }
+
+        .text {
+            font-family: f;
+            font-size: 20px;
+            padding-left: 40px;
+            padding-top: 2%;
+            float: left;
+            color: aliceblue
+        }
+
+        /* .p {
+            float: calc(1000px 40vh 30px);
+        } */
+
+        .inline {
+
+            width: 80%;
+            max-height: 100%;
+            display: flex;
+
+            background-color: #686b82;
+            /* display: inline-block; */
+            border: 2px solid;
+            position: relative;
+            left: 10%;
+            top: 10%;
+
+
+
+
+        }
+
+        .item4 {
+            display: grid;
+            overflow: auto;
+            grid-gap: 5px;
+
+        }
+
+        span {
+            color: #7a5a36;
+        }
+
+    
+
+        .table1 {
+            background-color:#686b82;
+            width: 80vw;
+            /* max-height:90 ; */
+            margin-left: 100px;
+            margin-top: 70px;
+            top: 40px;
+            
+
+
+
+        }
+
+        .auto {
+             
+            width: 91vw;
+            height: 900px;
+            background-color:#545a69;
+            color: azure;
+            overflow: auto;
+            margin-left:70px;
+
+        }
+
+        h1 {
+            margin-left: 100px;
+            margin-top: 90px;
+            font-size: xx-large;
+        }
+
+
+        .table,th,td {
+             border: 2px solid;
+            font-weight:20px;
+            width: 15%;
+            
+            
+        }
+
+        th {
+            
+            font-size:30px; 
+           
+           
+        }
+
+        td {
+             font-size: 30px;
+             
+            
+            
+        }
+
+
+        footer {
+            top:30px;
+            width:100%;
+            height: 40%; 
+            background-color:#6d7e8f;
+            position: relative;
+            /* margin-left: 60px;
+            padding-right: 18px; */
+            
+        
+            
+        }
+        .footertext{
+            margin-left:40%;
+            margin-top: -1%;
+            
+        }
+
+        li::marker {
+            content:color red;
+            
+        }
+        .nav4 {
+            background-color: rgba(55, 45, 59, 0.596);
+            width:100%;
+            /* min-height:10rem; */
+            overflow: auto;
+             margin-top: 60px;
+            /* margin-left: 50px;
+            margin-right: 100px; */ */
+        }
+        .fromdiv{
+            margin-top: 40px;
+            width: 95%;
+            height: 150px;
+            color: aliceblue;
+            font-size: x-large;
+            background-color:#545a69;
+            margin-left: 60px;
+            padding-right: 15px;
+        }
+        #browser
+          {
+            width: 80vw;
+            height: 30px;
+            margin-left: 60px;
+            
+          }
+        h7
+          {
+            color:aliceblue;
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            top:30px;
+            left:40px;
+
+          }
+        .container4{
+            display:flex;
+            width:95%;
+            height:600px;
+            margin-top: 40px;
+            margin-left: 30px;
+            flex-direction: column repeat(30%,70%);
+            
+            background-color:#686b82;
+            column-gap:100px;
+        
+        }
+        .container4 > div
+        {
+            /* background-color:aqua; */
+            /* width:50%; */
+            height:100%;
+
+            
+
+        }
+        .avatar{
+            width:30%;
+            height:80%;
+            background-color:#545a69;
+
+        } 
+        .avatar2{
+            width:50%;
+            position:relative;
+            left:30px;
+            top:60px;
+            
+            
+
+        }
+        h5{
+            font-size: x-large;
+            position: relative;
+            top:10px;
+            color: aliceblue;
+            
+            
+        }
+        .avatar1{
+            width:80%;
+            height:15%;
+            background-color:rgb(207, 149, 42);
+            position: relative;
+            color:white;
+            left:20px;
+            top:70px;
+            font-weight:20px;
+            text-align: center;
+          
+            
+
+        } 
+        .changeAvatar{
+            position: relative;
+            font-weight: bold;
+            font-size: xx-large;
+            color: azure;
+            top:30px;
+            left:30px;
+            
+
+        }
+        .last{
+            
+            background-color:#545a69;
+            overflow:hidden;
+            width: 79%;
+
+        } 
+        input{
+            width:  40%;
+            height:30px;
+            margin-left:30px;
+        }
+        label{
+            font-size: xx-large;
+            margin-left:30px;
+
+        }
+        .Account{
+            /* width:100%; */
+            font-size: xx-large;
+            position:relative;
+            top:-10%;
+        }
+    .accountname{
+        position:relative;
+        left:50%;
+        top:-37%
+    }
+    .accountinput{
+        position:relative;
+        left:50%;
+        top:-37%;
+
+    }
+    /* .accountinput12{
+        background-color: #b6c622;
+    } */
+    .ram
+    {
+        width:50%;
+        position:relative;
+        left:-20%;
+        top:-10%;
+    }
+    .placeholder{
+        text-align: center;
+        font-size: xx-large;
+        
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav2">
+
+            <ul class="ul">
+                <li><a href="#" class="product">PRODOCT ADMIN</a></li>
+                <li><a href="#"><i class="fa-solid fa-gauge"></i>&nbsp;&nbsp;Dashbord</a></li>
+                <li><a href="#"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;Reports</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Products</a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;Accounts</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;Settings
+                </a></li>
+                <li><a href="#" class="product">Admin,Logout</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <p> Welcome back <strong>,ADMIN</strong>
+    <p>
+    <div class="container">
+        <div class="item1"><h7>Latest hits</h7> 
+            <img src="./image.html/Screenshot 2024-07-10 210130.jpg" id="image">
+          
+
+        </div>
+        <div class="item2">
+            <h7>Perfromance</h7>
+            <img src="./image.html/Screenshot 2024-07-10 210149.jpg" id="image">
+        </div>
+        <div class="item3"><img src="./image.html/Screenshot 2024-07-10 213529.png" id="image"></div>
+        <div class="item4"><h7>Notification List</h7>
+            <div class="inline">
+                <div><img src="./image.html/notification-01.jpg" id="image1"></div>
+                <div class="text">
+                    <p>Jessica and 6 others sent you new <span>product updates</span> . check new orders.</p>
+                    <h7>6hr ago</h7>
+                </div>
+            </div>
+            <div class="inline">
+                <div><img src="./image.html/notification-02.jpg" id="image1"></div>
+                <div class="text">
+                    <p>Oliver Too and 6 others send you existing <span>product updates</span> .Read more reports.</p>
+                    <h7>6h ago</h7>
+                </div>
+            </div>
+            <div class="inline">
+                <div><img src="./image.html/notification-03.jpg" id="image1"></div>
+                <div class="text">
+                    <p>Victoria nd 6 orthers send you <span>orders updates</span>.Read order information.</p>
+                    <h7>6h ago</h7>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- <span style="display: block;"> -->
+            <div class="auto">
+                <h1> Order List</h1><br><br>
+                <div class="table1">
+
+
+
+                    <table rules="cols" border="10px solid">
+                        <tr>
+                            <th>ORDER NO.</th>
+                            <th>STATUS</th>
+                            <th>OPERATION</th>
+                            <th>LOCATION</th>
+                            <th>DISTANCE</th>
+                            <th>START DATE</th>
+                            <th>EST DELIVERY</th>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                        <tr>
+                            <td>#122349</td>
+                            <td>
+                                <li> moving</li>
+
+                            </td>
+                            <td>oliver trag</td>
+                            <td>London, Uk</td>
+                            <td>485km</td>
+                            <td>16:00,12Nov 2018</td>
+                            <td>08:00,18 Nov 2018</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        
+        <footer><li><a href="#" class="footertext">Copyright&nbsp;&nbsp;<i class="fa-solid fa-copyright"></i>&nbsp;&nbsp;2018 All right Design Template Mo</a></li></footer>
+        <nav class="nav4">
+            <div class="nav2">
+    
+                <ul class="ul">
+                    <li><a href="#" class="product">PRODOCT ADMIN</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gauge"></i>&nbsp;&nbsp;Dashbord</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;Reports</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Products</a></li>
+                    <li style="background-color: orange;"><a href="#"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;Accounts</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;Settings</a></li>
+                    <li><a href="#" class="product">Admin,Logout</a></li>
+                </ul>
+    
+            </div>
+    
+        </nav>
+    <div class="fromdiv">
+        
+     <h3>List of Accounts</h3>
+        <form class="form">
+            <label for="browser">Accounts:</label><br>
+            <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="SBI">
+                    <option value="ANDHAR">
+                    <option value="STATE BANK">
+                    <option value="SBI">
+                    <option value="SBI">
+                </datalist>
+        </form>    
+        
+        
+        
+
+    </div>
+    <div class="container4">
+        <div class="avatar">
+            <h4 class="changeAvatar">Change Avater</h4>
+            <img src="./image.html/avatar.png" class="avatar2">
+            <div class="avatar1"> <h5>UPLOAD NEW PHOTO</h5></div>
+        </div>
+        <div class="last">
+            <h1 class="Account">Account Settings</h1> 
+            <label type="accoun">Account Name</label><br>
+            <input type=""></input><br>
+            <label type="account">Password</label><br>
+            <input type=""></input><br>
+            <label type="account">Phone</label><br>
+            <input class=""></input><br>
+            <label class="accountname">Account Email</label><br>
+            <input class="accountinput"></input><br>
+            <label class="accountname">Re-enterPassword</label><br>
+            <input class="accountinput"></input><br><br><br>
+            <input class="accountinput" style="background-color:orange;" placeholder="kskjs"></input>
+            <input class="ram" style="background-color: orange;" placeholder="skjvnksv"></input>
+            
+            
+            
+            
+            
+            
+ 
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
